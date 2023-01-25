@@ -60,7 +60,7 @@ h6
 .navbar
 {   
     background-color: #ffffff;
-    position: absolute;
+    position: static;
     width: 100%; 
     display: flex;
     justify-content: space-between;
@@ -106,7 +106,6 @@ h6
     height: auto;
     width: 35%;
     float: left;
-    margin-top: 5%;
     margin-left: 12.5%;
     margin-right: 2.5%;
     margin-bottom: 20px;
@@ -126,7 +125,6 @@ h6
     float: left;
     margin-left: 2.5%;
     margin-right: 12.5%;
-    margin-top: 5%;
     margin-bottom: 20px;
 
     z-index: 10;
