@@ -1,3 +1,4 @@
+
 a
 {
     text-decoration: none;
@@ -41,11 +42,10 @@ h6
 {
     position: absolute;
     color: #ffffff;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 99;
-    display: grid; 
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
     place-items: center;
     
 }
@@ -99,19 +99,36 @@ h6
 }
 .content
 {
+        display: flex;
+        background-color: #ffffff;
 }
 .leftcontent
 {
     /* background-color: aqua; */
     height: auto;
     width: 35%;
-    float: left;
+    /* float: left; */
     margin-left: 12.5%;
     margin-right: 2.5%;
     margin-bottom: 20px;
     z-index: 10;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+}
+.underline
+{
+    /* background-color: aqua; */
+    text-decoration: underline;
+    display: inline;
+    text-underline-offset: 1em;
+}
+.underline::after
+{
+    content: "";
+  display: inline;
+  width: 32px;
+  padding-top: 3px;
+  border-bottom: 2px solid #000000;
 }
 .leftcontent ul
 {
@@ -122,7 +139,7 @@ h6
     /* background-color: blue; */
     height: auto;
     width: 35%;
-    float: left;
+    /* float: left; */
     margin-left: 2.5%;
     margin-right: 12.5%;
     margin-bottom: 20px;
